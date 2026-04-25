@@ -1,0 +1,13 @@
+{
+  "name": "rug-radar",
+  "version": "1.0.0",
+  "description": "Real-time Solana token safety scanner powered by Birdeye Data",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter=client dev",
+    "build": "pnpm --filter=client build",
+    "preview": "pnpm --filter=client preview",
+    "backend:dev": "pnpm --filter=backend dev",
+    "backend:start": "pnpm --filter=backend start"
+  }
+}
