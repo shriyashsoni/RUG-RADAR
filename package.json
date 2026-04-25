@@ -3,15 +3,11 @@
   "version": "1.0.0",
   "description": "Real-time Solana token safety scanner powered by Birdeye Data",
   "private": true,
-  "workspaces": [
-    "client",
-    "backend"
-  ],
   "scripts": {
-    "dev": "npm run dev --workspace=client",
-    "build": "npm run build --workspace=client",
-    "preview": "npm run preview --workspace=client",
-    "backend:dev": "npm run dev --workspace=backend",
-    "backend:start": "npm run start --workspace=backend"
+    "dev": "pnpm --filter=client dev",
+    "build": "pnpm --filter=client build",
+    "preview": "pnpm --filter=client preview",
+    "backend:dev": "pnpm --filter=backend dev",
+    "backend:start": "pnpm --filter=backend start"
   }
 }
